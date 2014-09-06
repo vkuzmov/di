@@ -1,0 +1,221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F197211966F260006D8A18 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11F197201966F260006D8A18 /* main.cpp */; };
+		11F197231966F260006D8A18 /* WordSwitcher.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11F197221966F260006D8A18 /* WordSwitcher.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11F1971B1966F260006D8A18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				11F197231966F260006D8A18 /* WordSwitcher.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11F1971D1966F260006D8A18 /* WordSwitcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordSwitcher; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F197201966F260006D8A18 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		11F197221966F260006D8A18 /* WordSwitcher.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WordSwitcher.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F1971A1966F260006D8A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11F197141966F260006D8A18 = {
+			isa = PBXGroup;
+			children = (
+				11F1971F1966F260006D8A18 /* WordSwitcher */,
+				11F1971E1966F260006D8A18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11F1971E1966F260006D8A18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11F1971D1966F260006D8A18 /* WordSwitcher */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11F1971F1966F260006D8A18 /* WordSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				11F197201966F260006D8A18 /* main.cpp */,
+				11F197221966F260006D8A18 /* WordSwitcher.1 */,
+			);
+			path = WordSwitcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11F1971C1966F260006D8A18 /* WordSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F197261966F260006D8A18 /* Build configuration list for PBXNativeTarget "WordSwitcher" */;
+			buildPhases = (
+				11F197191966F260006D8A18 /* Sources */,
+				11F1971A1966F260006D8A18 /* Frameworks */,
+				11F1971B1966F260006D8A18 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordSwitcher;
+			productName = WordSwitcher;
+			productReference = 11F1971D1966F260006D8A18 /* WordSwitcher */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11F197151966F260006D8A18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Vladimir Kuzmov";
+			};
+			buildConfigurationList = 11F197181966F260006D8A18 /* Build configuration list for PBXProject "WordSwitcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11F197141966F260006D8A18;
+			productRefGroup = 11F1971E1966F260006D8A18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11F1971C1966F260006D8A18 /* WordSwitcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11F197191966F260006D8A18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F197211966F260006D8A18 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11F197241966F260006D8A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		11F197251966F260006D8A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		11F197271966F260006D8A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11F197281966F260006D8A18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11F197181966F260006D8A18 /* Build configuration list for PBXProject "WordSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F197241966F260006D8A18 /* Debug */,
+				11F197251966F260006D8A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F197261966F260006D8A18 /* Build configuration list for PBXNativeTarget "WordSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F197271966F260006D8A18 /* Debug */,
+				11F197281966F260006D8A18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11F197151966F260006D8A18 /* Project object */;
+}

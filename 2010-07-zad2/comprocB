@@ -1,0 +1,35 @@
+if test -z $5
+	then
+		echo $1							# -> b1
+		for var
+		do echo $var >> fniz			# output to fniz file
+										# -> b1
+										# -> b2
+										# -> b3
+		done
+	else
+		echo $2
+		while true
+		do echo LOOP
+		break
+		done
+fi
+
+cat fniz								# -> b1
+										# -> b2
+										# -> b3
+read string								# <- b2
+
+until cat fniz | grep $string			# -> b2 (printed by grep)
+do
+	set $2 b1
+	echo `grep $2 fniz`
+	echo END
+	exit
+done
+
+set $3 $1 1						# b1 => b3, b2 => b1, b3 => 1
+echo OK $3								# -> OK 1
+echo `grep $1 fniz`						# -> b3
+exit
+echo OK
