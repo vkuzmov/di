@@ -1,0 +1,64 @@
+(define (totalmin l)
+	(define (temp l2 val)
+		(if (null? l2) 
+			val
+			(if (> val (car l2)) 
+				(temp (cdr l2) (car l2)) 
+				(temp (cdr l2) val))))
+	(temp l (car l)))
+
+(define (totalminf0 l)
+	(define (temp l2 val)
+		(if (null? l2) 
+			val
+			(if (> (val 0) ((car l2) 0)) 
+				(temp (cdr l2) (car l2)) 
+				(temp (cdr l2) val))))
+	(temp l (car l)))
+
+
+
+
+(define l2 (cons f1 (cons f2 ())))
+
+(define (check f1 f2 i)
+	(if (not (eq? (f1 i) (f2 i))) 
+		false
+		(if (= i 0) 
+			true
+			(check f1 f2 (- i 1)))))
+
+(define (compos f1 f2 l)
+	(cons-stream 
+		f1 
+		(compos 
+			f2 
+			(if (not (check f1 f2))
+				(lambda (x) (f1 (f2 x)))
+				(totalminf0 l))
+			(reverse (cons f2 (reverse l)))
+			)))
+
+(define id (lambda (x) x))
+(define (chainMinCompositions f) (compos id f (cons id ()) ))
+
+
+
+
+
+
+(define (fibgen a b)
+	(cons-stream a (fibgen b (+ a b))))
+(define fibs (fibgen 0 1))
+
+(define (nth n stream)
+	(if (= n 1) (head stream) (nth (- n 1) (tail stream))))
+
+(define (gcd2 x y)
+	(if (= x 0) y (gcd y (remainder y x))))
+
+
+
+
+
+		
